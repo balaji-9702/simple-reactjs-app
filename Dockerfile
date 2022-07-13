@@ -8,7 +8,7 @@ WORKDIR /app
 
 # install app dependencies
 COPY package.json ./
-COPY package-lock.json ./
+COPY . ./
 RUN npm install --silent
 RUN npm run build
 
